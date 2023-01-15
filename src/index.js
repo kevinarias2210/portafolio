@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import {Header} from './Componentes/Container/header/Header';
 import {Main} from './Componentes/Container/main/Main';
+import {Aside} from './Componentes/Container/aside/Aside';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +13,7 @@ root.render(
     <App />
     <Header />
     <Main />
+    <Aside />
   </React.StrictMode>
 );
 

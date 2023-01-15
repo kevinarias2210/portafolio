@@ -1,0 +1,88 @@
+@import "../style/style.scss";
+
+.aside{
+    width: 96%;
+    margin: 7px;
+    &__container{
+        .aside__container--about{
+            .aside__container--aboutMe{
+                .aside__container--h2{
+                    font-size: 5vmin;
+                    color: $Color-Uno;
+                }
+            }
+            .aside__container--info{
+                margin: 5px 0;
+                .aside__container--p{
+                    font-size: 4.3vmin;
+                    font-weight: 100;
+                }
+            }
+        }
+        .aside__container--contact{
+            .aside__container--con{
+                .aside__container--h2{
+                    font-size: 5vmin;
+                    color: $Color-Uno;
+                }
+            }
+            .aside__container--red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 15px 0;
+                .aside__container--linkedIn{
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                    color: $Color-Dos;
+                    .aside__container--img{
+                        width: 12vmin;
+                    }
+                    .aside__container--p{
+                        font-size: 5vmin;
+                    }
+                }
+            }
+            .aside__container--number{
+                @extend .aside__container--linkedIn;
+            }
+            .aside__container--gmail{
+                @extend .aside__container--linkedIn;
+            }
+            .aside__container--download{
+                .aside__container--button{
+                    padding: 10px;
+                    background-color: $Color-Cuatro;
+                    border: 1px solid $Color-Dos;
+                    border-radius: 10px;
+                    font-size: 5vmin;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .aside{
+        margin-left: 30px;
+        &__container{
+            .aside__container--contact{
+                .aside__container--red{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    justify-content: center;
+                    .aside__container--linkedIn{
+                        justify-content: center;
+                    }
+                    .aside__container--download{
+                        display: flex;
+                        justify-content: center; 
+                    }
+                }
+            }
+        }
+    }
+}
