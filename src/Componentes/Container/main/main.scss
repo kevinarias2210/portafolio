@@ -3,13 +3,131 @@
 .main{
     width: 100%;
     &__container{
+        height: 94vmin;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 192px;
         .main__container--greeting{
-
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 7px;
+            .main__container--p1{
+                font-weight: 100;
+                font-size: 9vmin;
+            }
+            .main__container--p2{
+                font-weight: 600;
+                font-size: 9vmin;
+                color: $Color-Dos;
+            }
+            .main__container--p3{
+                font-weight: 600;
+                font-size: 6vmin;
+                color: $Color-Uno;
+            }
         }
         .main__container--picture{
-            
+            @extend .main__container--greeting;
+            .main__container--circle{
+                position: absolute;
+                .main__container--c{
+                    width: 180px;
+                    height: 180px;
+                    object-fit: cover;
+                }
+            }
+            .main__container--photo{
+                height: 110vmin;
+                position: absolute;
+                z-index: 2;
+                margin-left: 10px;
+                .main__container--img{
+                    width: 100%;
+                    height: 110vmin;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 540px){
+    .main{
+        &__container{
+            height: 64vmin;
+            grid-template-columns: 1fr 270px;
+            .main__container--picture{
+                .main__container--circle{
+                    width: 263px;
+                    height: 330px;
+                    .main__container--c{
+                        width: 260px;
+                        height: 268px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .main{
+        &__container{
+            grid-template-columns: 1fr 357px;
+            .main__container--picture{
+                .main__container--circle{
+                    .main__container--c{
+                        width: 335px;
+                        height: 335px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .main{
+        &__container{
+            height: 85vmin;
+            .main__container--greeting{
+                align-items: center;
+                .main__container--p1{
+                    font-size: 14vmin;
+                }
+                .main__container--p2{
+                    font-size: 14vmin;
+                }
+                .main__container--p3{
+                    font-size: 8vmin;
+                }
+            }
+            .main__container--picture{
+                .main__container--circle{
+                    .main__container--c{
+                        width: 307px;
+                    }
+                }
+                .main__container--photo{
+                    height: 64vmin;
+                    width: 340px;
+                    display: flex;
+                    justify-content: flex-end;
+                    .main__container--img{
+                        width: 83%;
+                        height: 64vmin;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .main{
+        &__container{
+            height: 56vmin;
         }
     }
 }

@@ -32,10 +32,11 @@
     .header{
         &__container{
             justify-content: space-around;
-            .header__container--img{
-            }
             .header__container--nav{
                 .header__container--button{
+                    margin: 5px 15px;
+                    padding: 10px 20px;
+                    border-radius: 25px;
                 }
             }
         }
@@ -47,12 +48,8 @@
         &__container{
             justify-content: space-around;
             border-bottom: 4px solid $Color-Dos;
-            .header__container--img{
-            }
             .header__container--nav{
                 border-bottom: none;
-                .header__container--button{
-                }
             }
         }
     }
@@ -63,12 +60,7 @@
         &__container{
             justify-content: space-between;
             padding: 20px 40px;
-            .header__container--img{
-            }
-            .header__container--nav{
-                .header__container--button{
-                }
-            }
         }
     }
 }
+
