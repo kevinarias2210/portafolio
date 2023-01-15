@@ -1,0 +1,74 @@
+@import "../style/style.scss";
+
+.header{
+    width: 100%;
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        .header__container--img{
+            width: 18vmin;
+        }
+        .header__container--nav{
+            margin-left: 10px;
+            padding: 0;
+            @extend .header__container;
+            .header__container--button{
+                margin: 5px;
+                padding: 10px 7px;
+                border: 1px solid $Color-Dos;
+                border-radius: 20px;
+                font-family: $fuente-titulo;
+                font-weight: 100;
+                font-size: 3.7vmin;
+                background-color: $Color-Cuatro;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 540px){
+    .header{
+        &__container{
+            justify-content: space-around;
+            .header__container--img{
+            }
+            .header__container--nav{
+                .header__container--button{
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .header{
+        &__container{
+            justify-content: space-around;
+            border-bottom: 4px solid $Color-Dos;
+            .header__container--img{
+            }
+            .header__container--nav{
+                border-bottom: none;
+                .header__container--button{
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .header{
+        &__container{
+            justify-content: space-between;
+            padding: 20px 40px;
+            .header__container--img{
+            }
+            .header__container--nav{
+                .header__container--button{
+                }
+            }
+        }
+    }
+}

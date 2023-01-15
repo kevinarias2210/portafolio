@@ -1,0 +1,15 @@
+@import "../style/style.scss";
+
+.main{
+    width: 100%;
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .main__container--greeting{
+
+        }
+        .main__container--picture{
+            
+        }
+    }
+}
