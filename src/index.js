@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import { Home } from './Componentes/Home/Home';
-import Headerbrand from './Componentes/brand/headerBrand/Headerbrand'
-import { HomeBrand } from './Componentes/HomeBrand/HomeBrand';
+import Home from './Componentes/Home/Home';
+import Headerbrand from './Componentes/brand/headerBrand/Headerbrand';
+import HeaderBriefcase from './Componentes/briefcase/headerBriefcase/HeaderBriefcase';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,9 +16,9 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/brand" element={<Headerbrand />} />
+        <Route path="/briefcase" element={<HeaderBriefcase />} />
       </Routes>
     </BrowserRouter>
-    <HomeBrand />
   </React.StrictMode>
 );
 

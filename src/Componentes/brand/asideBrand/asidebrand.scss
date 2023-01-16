@@ -64,15 +64,6 @@
                     @extend .asideB__container2__circleO;
                 }
             }
-            /* .asideB__container2__circleW{
-                @extend .asideB__container2__circleN;
-                .asideB__container2__circleWH{
-                    background-color: $Color-Cuatro;
-                    @extend .asideB__container2__circleO;
-                }
-            } */
-
-
             .asideB__container2__textColor{
                 flex-direction: column;
                 @extend .asideB__container--title;
@@ -194,5 +185,128 @@
                 font-size: 6vmin;
             }
         }    
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .asideB{
+        &__container{
+            .asideB__container--paragraph{
+                margin: 20px 228px;
+            }
+        }
+        &__paleta{
+            margin: 100px 10px;
+        }
+        .asideB__container2{
+            margin: 10px 0;
+            .asideB__container2__items{
+                align-items: center;
+                flex-direction: initial;
+                .asideB__container2__textColor{
+                    margin-top: 38px;
+                    .asideB__container2__HEX{
+                        justify-content: flex-start;
+                        .asideB__container2__H{
+                            font-size: 3vmin;
+                        }
+                        .asideB__container2__key{
+                            font-size: 3vmin;
+                        }
+                    }
+                }
+                .asideB__container2__why{
+                    .asideB__container2__whyP{
+                        font-size: 4vmin;
+                    }
+                    .asideB__container2__whyR{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .asideB__container3{
+            margin: 10px 0;
+            .asideB__container2__textColor{
+                margin-top: 38px;
+                .asideB__container2__HEX{
+                    justify-content: flex-start;
+                    .asideB__container2__H{
+                        font-size: 3vmin;
+                    }
+                    .asideB__container2__key{
+                        font-size: 3vmin;
+                    }
+                }
+            }
+            .asideB__container2__why{
+                .asideB__container2__whyPW{
+                    font-size: 4vmin;
+                }
+                .asideB__container2__whyRW{
+                    font-size: 24px;
+                }
+            }    
+        }
+        .asideB__container4{
+            .asideB__container2__textColor{
+                .asideB__container2__HEX{
+                    .asideB__container2__H{
+                        font-size: 3vmin;
+                    }
+                    .asideB__container2__key{
+                        font-size: 3vmin;
+                    }
+                }
+            }
+            .asideB__container2__why{
+                .asideB__container2__whyPBL{
+                    font-size: 4vmin;
+                }
+                .asideB__container2__whyRBL{
+                    font-size: 24px;
+                }
+            }    
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .asideB{
+        &__paleta{
+            margin: 100px 10px;
+        }
+        .asideB__container2{
+            margin: 10px 40px;
+            .asideB__container2__items{
+                align-items: center;
+                flex-direction: initial;
+                .asideB__container2__textColor{
+                    margin-top: 38px;
+                    .asideB__container2__HEX{
+                        justify-content: flex-start;
+                        .asideB__container2__H{
+                            font-size: 3vmin;
+                        }
+                        .asideB__container2__key{
+                            width: 258px;
+                            font-size: 3vmin;
+                        }
+                    }
+                }
+                .asideB__container2__why{
+                    .asideB__container2__whyP{
+                        font-size: 4vmin;
+                    }
+                    .asideB__container2__whyR{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .asideB__container3{
+            padding: 0 15px;
+        }
     }
 }

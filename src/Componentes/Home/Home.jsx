@@ -4,7 +4,7 @@ import {Header} from '../Container/header/Header';
 import {Main} from '../Container/main/Main';
 import {Aside} from '../Container/aside/Aside';
 
-export function Home(){
+export default function Home(){
     return(
         <div>
             <Header />

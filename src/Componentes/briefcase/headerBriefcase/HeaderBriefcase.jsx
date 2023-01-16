@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import logo from './img/logo.png';
-import HomeBrand from '../../HomeBrand/HomeBrand';
+import HomeBriefcase from '../../HomeBriefcase/HomeBriefcase';
 
-export default function Headerbrand(){
+export default function HeaderBriefcase(){
     return(
         <header className="header">
             <div className="header__container">
@@ -19,7 +19,7 @@ export default function Headerbrand(){
                     </Link>
                 </div>
             </div>
-            <HomeBrand />
+            <HomeBriefcase />
         </header>
     )
 }

@@ -1,0 +1,24 @@
+@import '../../Container/style/style.scss';
+
+.mainBr{
+    width: 100%;
+    .mainBr__container{
+        margin: 10px;
+        .mainBr__container--title{
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+            .mainBr__container--h1{
+                color: $Color-Dos;
+            }
+        }
+        .mainBr__container--subtitle{
+            .mainBr__container--h2{
+                color: $Color-Uno;
+            }
+        }
+    }
+    .mainBr__container2{
+        margin: 10px;
+    }
+}
