@@ -67,6 +67,12 @@
                         object-fit: contain;
                     }
                 }
+                .main__container--photo{
+                    height: 71vmin;
+                    .main__container--img{
+                        height: 64vmin;
+                    }
+                }
             }
         }
     }
@@ -81,6 +87,12 @@
                     .main__container--c{
                         width: 335px;
                         height: 335px;
+                    }
+                }
+                .main__container--photo{
+                    height: 52vmin;
+                    .main__container--img{
+                        height: 57vmin;
                     }
                 }
             }

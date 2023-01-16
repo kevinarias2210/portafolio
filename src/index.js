@@ -2,18 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {Header} from './Componentes/Container/header/Header';
-import {Main} from './Componentes/Container/main/Main';
-import {Aside} from './Componentes/Container/aside/Aside';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { Home } from './Componentes/Home/Home';
+import Headerbrand from './Componentes/brand/headerBrand/Headerbrand'
+import { HomeBrand } from './Componentes/HomeBrand/HomeBrand';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Header />
-    <Main />
-    <Aside />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/brand" element={<Headerbrand />} />
+      </Routes>
+    </BrowserRouter>
+    <HomeBrand />
   </React.StrictMode>
 );
 
