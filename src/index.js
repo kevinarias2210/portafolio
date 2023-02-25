@@ -21,4 +21,5 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+console.log("hola")
 reportWebVitals();
