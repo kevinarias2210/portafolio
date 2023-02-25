@@ -20,5 +20,30 @@
     }
     .mainBr__container2{
         margin: 10px;
+        .vertical-timeline::before{
+            background: $Color-Dos;
+        }
+        .contain__h1{
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            .vertical-timeline-element-title{
+                font-size: 6vmin;
+            }
+        }
+        .contain__button{
+            @extend .contain__h1;
+            .buttonM{
+                border-radius: 10px;
+                padding: 5px 20px;
+                border: none;
+                margin: 10px;
+                box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 50%);
+                font-size: 4vmin;
+            }
+            .buttonM img {
+                width: 8vmin;
+            }
+        }       
     }
 }
