@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from './Componentes/Home/Home';
-import Headerbrand from './Componentes/brand/headerBrand/Headerbrand';
-import HeaderBriefcase from './Componentes/briefcase/headerBriefcase/HeaderBriefcase';
+import Mainbrand from './Componentes/brand/mainBrand/Mainbrand';
+import MainBriefcase from './Componentes/briefcase/mainBriefcase/MainBriefcase';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,14 +15,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/brand" element={<Headerbrand />} />
-        <Route path="/briefcase" element={<HeaderBriefcase />} />
+        <Route path="/brand" element={<Mainbrand />} />
+        <Route path="/briefcase" element={<MainBriefcase />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

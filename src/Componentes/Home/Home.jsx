@@ -1,15 +1,13 @@
 import React from "react";
-/* import { Link } from 'react-router-dom'; */
-import {Header} from '../Container/header/Header';
 import {Main} from '../Container/main/Main';
 import {Aside} from '../Container/aside/Aside';
+import Containheader from "../Containheader/Containheader";
 
 export default function Home(){
     return(
-        <div>
-            <Header />
+        <Containheader>
             <Main />
             <Aside />
-        </div>
+        </Containheader>
     )
 }
