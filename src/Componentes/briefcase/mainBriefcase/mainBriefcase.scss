@@ -34,15 +34,19 @@
         .contain__button{
             @extend .contain__h1;
             .buttonM{
+                height: 72px;
                 border-radius: 10px;
                 padding: 5px 20px;
                 border: none;
                 margin: 10px;
-                box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 50%);
                 font-size: 4vmin;
+                text-decoration: none;
+                color: black;
+                box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 50%);
+                background-color: white;
             }
             .buttonM img {
-                width: 8vmin;
+                width: 7vmin;
             }
         }       
     }
