@@ -3,7 +3,6 @@ import './aside.scss';
 import linkedIn from './img/linkedin.png';
 import phone from './img/phone.png';
 import gmail from './img/gmail.png';
-import CV from './img/CV.pdf';
 
 export function Aside(){
     return(
@@ -35,7 +34,7 @@ export function Aside(){
                             <p className="aside__container--p">kariasduarte@gmail.com</p>
                         </div>
                         <div className="aside__container--download">
-                            <a download="CV" href={CV} className="aside__container--button">Descargar CV</a>
+                            <a href="https://drive.google.com/file/d/1E3ILD43IBRfSv3Gjqf0Jt8zK1kYGHHJN/view?usp=sharing" target="_blank" rel="noreferrer" className="aside__container--button">Ver CV</a>
                         </div>
                     </div>
                 </div>
