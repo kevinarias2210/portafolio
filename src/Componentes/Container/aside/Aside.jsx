@@ -13,7 +13,10 @@ export function Aside(){
                         <h2 className="aside__container--h2">Acerca de mi:</h2>
                     </div>
                     <div className="aside__container--info">
-                        <p className="aside__container--p">Tengo 25 años, soy productor de multimedia y recién egresado de educamás, un bootcamp de seis meses. Mi objetivo profesional es seguir aprendiendo y utilizar mis conocimientos para aportar a la empresa.</p>
+                        <p className="aside__container--p">Tengo 26 años, soy productor de multimedia y recién egresado de educamás, un bootcamp de cinco meses. 
+                        Actualmente sigo preparandome en este mundo amplio y maravilloso que es la tecnología, tengo conocimientos en manipulación del DOM, consumo de API,
+                        aprendiendo más sobre React y muy pronto estudiaré a más profundidad backend, después de esto a mediados y a largo plazo tengo planeado el desarrollo 
+                        mobile, con herramientas de React Native, Kotlin.</p>
                     </div>
                 </div>
                 <div className="aside__container--contact">
